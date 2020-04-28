@@ -51,6 +51,7 @@ for i in range(30000):
     if (t1 - start_time) > 30:
         correct = 0
         total = 0
+        start_time = time()
 
     if correct == 100:
         print(x.content)
