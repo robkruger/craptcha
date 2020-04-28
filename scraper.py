@@ -1,5 +1,3 @@
-import io
-import os
 import numpy as np
 from PIL import Image
 import pytesseract
@@ -14,7 +12,7 @@ s = requests.Session()
 correct = 0
 total = 0
 start_time = time()
-for i in range(30000):
+while True:
     t0 = time()
 
     r = s.get('https://d89ff86a985b72f37996b8873ebbf4f2.challenge.hackazon.org/craptcha.php', stream=True)
